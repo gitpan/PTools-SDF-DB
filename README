@@ -1,0 +1,48 @@
+PTools-SDF-DB version 0.01
+==========================
+
+This is an add-on package for the PTools-SDF distribution.
+It includes OO classes that provide a simplistic DBMS. It
+provides a 'schema' language and a 'dbutil' utility script 
+to add/query,etc. local and remote SDF data files.
+
+'Schema' allows for adding data loader(s) via custom Perl 
+modules (such as to obtain default data from an LDAP server).
+
+Includes a completely transparent RPC client and server API.
+Your scripts can convert from local to remote access without
+any change.
+
+See the 'Overview.pod' document included along with the
+PTools-SDF distribution.
+
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+   Getopt-Long   2.17 or later
+   Net-Server
+   PTools
+   PTools-SDF
+   RlRPC
+   Storable
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 1997-2007 by Chris Cobb
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
+
